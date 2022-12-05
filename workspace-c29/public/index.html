@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Silicon primer web</title>
+    <link rel="icon" type="image/x-icon" href="/imagenes/html.ico">
+
+</head>
+
+<body style="background-color:powderblue;">
+    <h1>Encabezados H</h1>
+    <h2>This is heading 2</h2>
+    <h3>This is heading 3</h3>
+    <h4>This is heading 4</h4>
+    <h5>This is heading 5</h5>
+    <h6>This is heading 6</h6>
+
+    <h1>Parrafos p</h1>
+
+    <p>Parrafo 1</p>
+    <p>Parrafo 2</p>
+
+    <h1>
+        Aprendiendo enlaces
+    </h1>
+
+
+    <!--  
+        
+        html tenemos etiqueta <a>  
+        atributo "href"
+    -->
+    <a
+        href="https://docs.google.com/presentation/d/1iP7KoLKWAUtFrbuDMgI8NifWyEGCluUVjYQJ4IYE0RI/edit#slide=id.g18c41c306d8_0_200">
+        Material modulo 6
+    </a>
+    <a href="/personas.html">
+        Ver lista de personas
+    </a>
+    <a href="/seguridad/usuarios.html">
+        Ver lista de usuarios
+    </a>
+    <a href="#enlaces2">
+        Ver mas contenido
+    </a>
+
+    <h1>
+        Aprendiendo salto de linea
+    </h1>
+
+    <a
+        href="https://docs.google.com/presentation/d/1iP7KoLKWAUtFrbuDMgI8NifWyEGCluUVjYQJ4IYE0RI/edit#slide=id.g18c41c306d8_0_200">
+        Material modulo 6
+    </a>
+    <br>
+    <a href="/personas.html">
+        Ver lista de personas
+    </a>
+    <br attrbr="loquesea">
+    <a href="/seguridad/usuarios.html">
+        Ver lista de usuarios
+    </a>
+
+    <h1>
+        Aprendiendo linea separadora horizontal
+    </h1>
+    <hr>
+    <p>Este es mi parrafo 1</p>
+    <hr>
+    <p>Este es mi parrafo 2</p>
+
+    <hr>
+    <h1>
+        Etiquete pre
+    </h1>
+    <pre>
+        Este es un parrafo
+        representado con pre
+        que tiene salto de lineas
+        dentro del parrafo sin etiqueta br.
+    </pre>
+    <p>
+        Este es un parrafo
+        representado con p
+        que tiene salto de lineas
+        dentro del parrafo sin etiqueta br.
+    </p>
+    <hr>
+    <h1>Estilos</h1>
+    <p style="border: 1px solid black;">Este es un parrafo inicial</p>
+    <p style="border: 3px solid blue; background-color: white;">Este es un parrafo inicial</p>
+
+    <hr>
+    <h1>Formateando texto</h1>
+    <b>Texto en negrita</b><br>
+    <strong>Texto importante</strong><br>
+    <i>Texto en cursiva</i><br>
+    <em>Texto enfatizado</em><br>
+    <mark>Texto marcado</mark><br>
+    <small>Texto pequeño</small> texto normal<br>
+    <del>Texto tachado</del><br>
+    <ins>Texto subrayado</ins><br>
+    <sub>
+        <!-- esto es un comentario -->Texto subindice
+    </sub>texto normal<br>
+    <sup>Texto superindice</sup>texto normal<br>
+    f<sub>(x)</sub>=x<sup>2</sup> * 3
+
+    <!-- esto es un 
+        comentario multi
+    linea
+-->
+    <hr>
+    <h1 id="enlaces2">Enlaces parte 2</h1>
+    <a target="_blank"
+        href="https://docs.google.com/presentation/d/1iP7KoLKWAUtFrbuDMgI8NifWyEGCluUVjYQJ4IYE0RI/edit#slide=id.g18c41c306d8_0_200">
+        Material modulo 6
+    </a>
+    <br>
+    <a href="/personas.html" target="_blank">
+        Ver lista de personas
+    </a>
+
+    <hr>
+    <h1>Marcadores</h1>
+    <a href="/seguridad/usuarios.html#parte2">
+        Usuarios parte2
+    </a>
+    <hr>
+    <h1>Imagenes</h1>
+    <h2>Imagen interna</h2>
+    <img src="/imagenes/html.png" width="200" height="200">
+
+    <h2>Imagen externa</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/HTML5_logo_black.svg/2048px-HTML5_logo_black.svg.png"
+        width="50%" height="200" alt="Logo HTML5 blanco y negro">
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/HTML5_logo_black.asdf.svg" width="200"
+        height="200" alt="Logo HTML5 blanco y negro">
+    <hr>
+    <h1>Picture</h1>
+    <picture>
+        <source media="(min-width: 850px)"
+            srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/HTML5_logo_black.svg/2048px-HTML5_logo_black.svg.png"
+            width="200" height="200">
+        <source media="(min-width: 665px)" srcset="img_car.jpg" width="200" height="200">
+        <img src="/imagenes/html.png" width="200" height="200">
+    </picture>
+
+    <hr>
+    <h1>Tablas</h1>
+    <table style="width: 80%; border: 1px solid black;">
+        <tr>
+            <th style="border: 1px solid black;">DNI</th>
+            <th style="border: 1px solid black;">Nombre</th>
+            <th style="border: 1px solid black;">Apellido</th>
+        </tr>
+        <tr>
+            <td>35.888.888</td>
+            <td>Miguel Alejandro</td>
+            <td>Cichanowski</td>
+        </tr>
+        <tr>
+            <td>45.888.888</td>
+            <td>Maria</td>
+            <td>Gomez</td>
+        </tr>
+        <tr>
+            <td>45.333.333</td>
+            <td>Pedro</td>
+            <td>Perez</td>
+        </tr>
+    </table>
+    <h1>Tablas como maquetacion</h1>
+    <table>
+        <tr>
+            <td>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/HTML5_logo_black.svg/2048px-HTML5_logo_black.svg.png" width="200"
+                    height="200" alt="Logo HTML5 blanco y negro">
+            </td>
+            <td>
+                Logo en blanco y negro
+            </td>
+        </tr>
+        <tr>
+            <td><img src="/imagenes/html.png" width="200" height="200" alt="Logo HTML5 blanco y negro"></td>
+            <td>Logo en color</td>
+        </tr>
+         <tr>
+            <td>texto 1</td>
+            <td>texto 2</td>
+            <td>texto 3</td>
+        </tr>
+    </table>
+</body>
+
+</html>

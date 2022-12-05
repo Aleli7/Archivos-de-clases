@@ -26,7 +26,7 @@ function login(req, res) {
                     nickname: result.nickname,
                     email: result.email
                 }
-                jwt.sign(user, 'siliconsecret', { expiresIn: '1200s' }, (err, token) => {
+                jwt.sign(user, 'siliconsecret', { expiresIn: '10s' }, (err, token) => {
                     if (!err) {
                         res.json({
                             datos: user,
@@ -45,7 +45,6 @@ function login(req, res) {
     });
 }
 
-
 function verificarToken(req, res, next) {
     if(!req.headers["authorization"]){
         res.status(403).send("No se recibio header autentication");
@@ -62,7 +61,6 @@ function verificarToken(req, res, next) {
             res.status(403).send("Error autentication");
         }
     }
-
 }
 
 module.exports = {app,verificarToken};
