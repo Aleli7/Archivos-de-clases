@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Usuarios</title>
+</head>
+
+<body>
+    <h1 id="tiempo">Temporizador:</h1>
+
+    <script>
+        var tiempo = 0;
+
+        reloj = function () {
+            setTimeout(() => {
+                tiempo += 1;
+                reloj();
+                document.getElementById("tiempo").innerHTML = "Temporizador: "+tiempo;
+            }, 1000);
+        }
+
+        reloj();
+
+ 
+    </script>
+</body>
+
+</html>

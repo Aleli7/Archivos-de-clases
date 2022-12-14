@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Personas</title>
+</head>
+
+<body>
+    <h1>Crear Persona</h1>
+    <form action="/persona/guardar" target="_blank" method="POST" autocomplete="on">
+        <fieldset>
+            <legend>Datos personales:</legend>
+
+            <div>
+                <label for="fname">Nombre</label><br>
+                <input type="text" id="fname" name="fname">
+            </div>
+            <div>
+                <label for="lname">Apellido:</label><br>
+                <input type="text" id="lname" name="lname">
+            </div>
+            <hr>
+            <div>
+                <label>Sexo:</label><br>
+
+                <input type="radio" name="sexo" id="M" value="M">
+                <label for="M">Masculino</label><br>
+
+                <input type="radio" name="sexo" id="F" value="F">
+                <label for="F">Femenino</label><br>
+
+                <input type="radio" name="sexo" id="O" value="O">
+                <label for="O">Otro</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Datos academicos</legend>
+            <div>
+                <label for="estudio">Nivel estudios:</label>
+                <select id="estudio" name="estudio">
+                    <option value="pri">Primaria</option>
+                    <option value="sec">Secundario</option>
+                    <option value="ter" selected>Terciario</option>
+                    <option value="uni" selected>Universitario</option>
+                    <option value="pos" selected>Post Grado</option>
+                </select>
+            </div>
+            <hr>
+            <div>
+                <textarea name="objetivo" rows="10" style="width: 90%;">
+                Escriba sus objetivos de cara al curso de programacion.
+             </textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Otros datos</legend>
+            <div>
+                <label for="de">Que dispositivos electronicos posees:</label>
+                <select id="de" name="de" multiple>
+                    <option value="sm">Smartphone</option>
+                    <option value="tv">TV</option>
+                    <option value="la" selected>Laptop</option>
+                    <option value="mo" selected>Mouse</option>
+                    <option value="ra" selected>Radio</option>
+                </select>
+            </div>
+            <hr>
+            <div>
+                <label for="browsers">Que navegador usas?</label>
+                <input list="browserslist" id="browsers" name="browsers">
+                <datalist id="browserslist">
+                    <option value="Internet Explorer">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                </datalist>
+
+            </div>
+        </fieldset>
+
+        <div>
+            <button type="submit">
+                <img src="https://spng.pngfind.com/pngs/s/176-1760995_png-file-svg-user-icon-free-copyright-transparent.png"
+                    width="30" height="30">
+                Crear persona
+            </button>
+            <input type="submit" value="Crear persona">
+        </div>
+    </form>
+</body>
+
+</html>
