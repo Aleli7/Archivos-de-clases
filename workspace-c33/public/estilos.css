@@ -1,0 +1,31 @@
+body {
+    background-color: black;
+    color: aqua;
+}
+
+h1, h2, h3, p.titulo, #identificador {
+    color: darkgray;
+    background-color: white;
+}
+
+#mini {
+    background-color: white;
+    color: blue;
+}
+
+.secondary_background{
+    background-color: rgb(59, 164, 175);
+}
+
+
+.secondary_color2{
+    color:orange;
+}
+
+p.secondary_color2{
+    color:orangered;
+}
+
+#maspeso {
+    color:yellow;
+}
