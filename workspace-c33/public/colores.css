@@ -1,0 +1,40 @@
+
+* {
+    font-size: 35px;
+}
+ 
+
+#div1 {
+    background-color: rgb(255, 0, 0);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#div2 {
+    background: rgb(240,16,54);
+    background: linear-gradient(180deg, rgba(240,16,54,1) 0%, rgba(15,15,233,1) 20%);
+}
+
+#div3 {
+    background-color: rgb(38, 77, 228);
+    opacity: 0.2;
+    border: 5px solid rgb(240,16,54);
+}
+
+
+#divh{
+    background-repeat: no-repeat;
+    background-image: url("imagenes/head.png");
+    min-height: 50px;
+    background-size: 100% 100% ;
+    /* background-attachment: scroll; */
+    background-position: sticky;
+    color: white;
+}
+
+#div4 {
+    border-width: 5px 5px;
+    border-style: solid;
+    border-color:rgb(38, 77, 228);
+    border-radius: 10px;
+    
+}
