@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demo</title>
+</head>
+
+<body>
+
+  <body>
+    <div id="demo">
+      <a href="http://google.com" id="enlace">Mi enlace</a>
+    </div>
+    <script>
+      var enlace = document.getElementById("enlace");
+      enlace.href = "https://getbootstrap.com";
+
+
+      var currentColor = "green";
+      setInterval(() => {
+        if (currentColor === "green") {
+          enlace.style.color = "black";
+          enlace.style.backgroundColor = "yellow";
+          currentColor = "black";
+        } else {
+          enlace.style.color = "green";
+          enlace.style.backgroundColor = "black";
+          currentColor = "green";
+        }
+      }, 300);
+    </script>
+  </body>
+</body>
+
+</html>
