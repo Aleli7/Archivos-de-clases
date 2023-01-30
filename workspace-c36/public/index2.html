@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demo</title>
+</head>
+
+<body>
+
+  <body>
+    <div id="contenedor">
+        <button type="button" onclick="sumar()">Incrementar contador</button>
+        <button type="button" onclick="restar()">Decrementar contador</button>
+        <span id="contador" style="font-size: 35px;">0</span> 
+    </div>
+    <script> 
+
+    var contador = 0;
+    
+    function sumar(){
+        contador +=1;
+        document.getElementById("contador").innerHTML=contador;
+    }
+
+    function restar(){
+        contador -=1;
+        document.getElementById("contador").innerHTML=contador;
+    }
+
+    </script>
+  </body>
+</body>
+
+</html>
